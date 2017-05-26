@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="294dp"
+    android:layout_height="397dp"
+    android:weightSum="1"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.22"
+        android:orientation="horizontal"
+        >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.3"
+            android:weightSum="1"
+            android:orientation="vertical"
+            android:background="@mipmap/detail_57">
+
+            <Space
+                android:layout_width="1px"
+                android:layout_height="0dp"
+                android:layout_weight="0.26"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="0.17"
+                android:text="앱잼 조 모임"
+                android:textSize="13dp"
+                android:layout_marginLeft="10dp"
+                android:textColor="#ffffff"
+                android:id="@+id/dialog_textview_todo"/>
+
+            <Space
+                android:layout_width="1px"
+                android:layout_height="0dp"
+                android:layout_weight="0.57"/>
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="1px"
+            android:layout_weight="0.06"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.06"
+            android:weightSum="1"
+            android:orientation="vertical">
+
+            <Space
+                android:layout_width="1px"
+                android:layout_height="0dp"
+                android:layout_weight="0.45"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.19"
+                android:src="@mipmap/detail_58"
+                />
+
+            <Space
+                android:layout_width="1px"
+                android:layout_height="0dp"
+                android:layout_weight="0.36"/>
+
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="1px"
+            android:layout_weight="0.02"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.56"
+            android:weightSum="1"
+            android:orientation="vertical">
+
+            <Space
+                android:layout_width="1px"
+                android:layout_height="0dp"
+                android:layout_weight="0.44"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="0.24"
+                android:text="김이름 박이름"
+                android:textSize="13dp"
+                android:textColor="#708895"
+                android:id="@+id/dialog_textview_friend"/>
+
+            <Space
+                android:layout_width="1px"
+                android:layout_height="0dp"
+                android:layout_weight="0.32"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Space
+        android:layout_width="1px"
+        android:layout_height="0dp"
+        android:layout_weight="0.04"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.42"
+        android:weightSum="1"
+        android:orientation="horizontal">
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="1px"
+            android:layout_weight="0.08"/>
+
+        <net.daum.mf.map.api.MapView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.84"
+            android:id="@+id/map" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="1px"
+            android:layout_weight="0.08"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.32"
+        android:weightSum="1"
+        android:orientation="horizontal">
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="1px"
+            android:layout_weight="0.09"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.06"
+            android:weightSum="1"
+            android:orientation="vertical">
+
+            <Space
+                android:layout_width="1px"
+                android:layout_height="0dp"
+                android:layout_weight="0.15"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.17"
+                android:weightSum="1"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.89"
+                    android:src="@mipmap/detail_59"/>
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="1px"
+                    android:layout_weight="0.11"/>
+
+            </LinearLayout>
+
+            <Space
+                android:layout_width="1px"
+                android:layout_height="0dp"
+                android:layout_weight="0.29"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.14"
+                android:src="@mipmap/detail_60"/>
+
+            <Space
+                android:layout_width="1px"
+                android:layout_height="0dp"
+                android:layout_weight="0.25"/>
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="1px"
+            android:layout_weight="0.02"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.48"
+            android:weightSum="1"
+            android:orientation="vertical">
+
+            <Space
+                android:layout_width="1px"
+                android:layout_height="0dp"
+                android:layout_weight="0.17"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="0.13"
+                android:id="@+id/dialog_textview_location"
+                android:text="광화문 드림센터"
+                android:textColor="#708895"
+                android:textSize="13dp"/>
+
+            <Space
+                android:layout_width="1px"
+                android:layout_height="0dp"
+                android:layout_weight="0.04"/>
+
+            <TextView
+                android:id="@+id/dialog_textview_address"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="0.09"
+                android:singleLine="false"
+                android:textSize="9dp"
+                android:text="서울특별시 종로구 세종대로 178"
+                android:textColor="#000000"/>
+
+            <Space
+                android:layout_width="1px"
+                android:layout_height="0dp"
+                android:layout_weight="0.03"/>
+
+            <TextView
+                android:id="@+id/dialog_textview_callnumber"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="0.1"
+                android:textColor="#000000"
+                android:textSize="9dp"
+                android:text="02-723-9100"/>
+
+            <Space
+                android:layout_width="1px"
+                android:layout_height="0dp"
+                android:layout_weight="0.06"/>
+
+            <TextView
+                android:id="@+id/dialog_textview_time"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="0.14"
+                android:textColor="#000000"
+                android:paddingLeft="3dp"
+                android:textSize="12dp"
+                android:text="6 PM" />
+
+            <Space
+                android:layout_width="1px"
+                android:layout_height="0dp"
+                android:layout_weight="0.12"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.35"
+            android:weightSum="1"
+            android:orientation="vertical">
+
+            <Space
+                android:layout_width="1px"
+                android:layout_height="0dp"
+                android:layout_weight="0.25"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.19"
+                android:weightSum="1"
+                android:orientation="horizontal">
+
+
+                <ImageButton
+                    android:background="@null"
+                    android:id="@+id/dialog_imagebtn_call"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.68"
+                    android:src="@mipmap/detail_png_03"/>
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="1px"
+                    android:layout_weight="0.32"/>
+
+            </LinearLayout>
+
+            <Space
+                android:layout_width="1px"
+                android:layout_height="0dp"
+                android:layout_weight="0.19"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.22"
+                android:weightSum="1"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:background="@null"
+                    android:id="@+id/dialog_imagebtn_delete"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.3"
+                    android:src="@mipmap/detail_png_04"/>
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="1px"
+                    android:layout_weight="0.11"/>
+
+                <ImageButton
+                    android:background="@null"
+                    android:id="@+id/dialog_imagebtn_edit"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.3"
+                    android:src="@mipmap/detail_png_05" />
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="1px"
+                    android:layout_weight="0.29"/>
+
+            </LinearLayout>
+
+            <Space
+                android:layout_width="1px"
+                android:layout_height="0dp"
+                android:layout_weight="0.27"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

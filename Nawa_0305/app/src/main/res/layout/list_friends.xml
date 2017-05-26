@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="55dp"
+    android:background="#f2f6f7"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+
+    <Space
+        android:layout_width="1px"
+        android:layout_height="0dp"
+        android:layout_weight="0.34" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.34"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="1px"
+            android:layout_weight="0.06" />
+
+        <CheckBox
+            android:id="@+id/mCheckBox"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.94"
+            android:button="@drawable/friends_checkbox"
+            android:paddingLeft="22dp"
+            android:text="NewCheckBox"
+            android:textSize="15dp"
+            android:textColor="#80909d"/>
+
+    </LinearLayout>
+
+    <Space
+        android:layout_width="1px"
+        android:layout_height="0dp"
+        android:layout_weight="0.32" />
+</LinearLayout>

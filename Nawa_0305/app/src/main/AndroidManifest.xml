@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="org.sopt.nawa_103">
+
+    <permission
+        android:name="org.sopt.nawa_103.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="org.sopt.nawa_103.permission.C2D_MESSAGE" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="com.android.alarm.permission.SET_ALARM" />
+
+    <receiver android:name=".Receiver.AlarmReceiver" />
+
+    <application
+        android:name=".Component.ApplicationController"
+        android:allowBackup="true"
+        android:icon="@mipmap/logo"
+        android:label="나와">
+
+        <!-- [START gcm_receiver] -->
+        <receiver
+            android:name="com.google.android.gms.gcm.GcmReceiver"
+            android:exported="true"
+            android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+
+                <category android:name="org.sopt.nawa_103" />
+            </intent-filter>
+        </receiver>
+        <!-- [END gcm_receiver] -->
+
+
+        <!-- [START gcm_listener_service] -->
+        <service
+            android:name=".Background.MyGcmListenerService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+            </intent-filter>
+        </service>
+        <!-- [END gcm_listener_service] -->
+
+
+        <!-- [START instanceId_listener_service] -->
+        <service
+            android:name=".Background.MyInstanceIDListenerService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.android.gms.iid.InstanceID" />
+            </intent-filter>
+        </service>
+        <!-- [END instanceId_listener_service] -->
+
+
+        <!-- [START gcm_registration_service] -->
+        <service
+            android:name=".Background.RegistrationIntentService"
+            android:exported="false" />
+        <!-- [END gcm_registration_service] -->
+        <!-- START Activity -->
+
+        <activity
+            android:name=".Activity.SplashActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <!-- screenOrientation : 가로, 세로 화면 중 한가지 모드로 실행하는 경우 -->
+        <activity
+            android:name=".Activity.LoginActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Activity.CalendarActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateAlwaysHidden">
+
+        </activity>
+        <!-- windowSoftInputMode : 키보드 설정 -->
+
+        <activity
+            android:name=".Activity.PushDialogActivity"
+            android:theme="@android:style/Theme.Translucent" />
+        <activity
+            android:name=".Activity.MsgDialogActivity"
+            android:theme="@android:style/Theme.Translucent">
+
+        </activity>
+        <activity
+            android:name=".Activity.MapActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+
+        </activity>
+        <activity
+            android:name=".Activity.WeeklyActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+
+        </activity>
+        <activity
+            android:name=".Activity.FriendsActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden">
+
+        </activity>
+        <activity
+            android:name=".Activity.AddActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+
+        </activity>
+        <activity
+            android:name=".Activity.UpdateActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Activity.PushStorageActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+
+        </activity>
+        <activity
+            android:name=".Activity.DetailDialogActivity"
+            android:theme="@android:style/Theme.DeviceDefault.Dialog.NoActionBar"></activity>
+        <activity android:name=".Activity.MainActivity"></activity>
+        <activity android:name=".Activity.SettingActivity"></activity>
+
+
+        <!-- End Activity -->
+    </application>
+
+</manifest>

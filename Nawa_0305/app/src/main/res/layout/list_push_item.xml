@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f3f3f3"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/push_list"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="1px"
+            android:layout_weight="0.06" />
+
+        <ImageView
+            android:id="@+id/iv1_push_item_p"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.06"
+            android:src="@mipmap/push_schedule_list" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="1px"
+            android:layout_weight="0.03" />
+
+
+        <TextView
+            android:id="@+id/tvFrom_push_item"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.64"
+            android:text="고윤미님과의 약속"
+            android:textIsSelectable="false"
+            android:textSize="13dp" />
+
+        <ImageButton
+            android:id="@+id/btn_push_detail"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            android:background="@null"
+            android:src="@mipmap/push_down" />
+
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="1px"
+            android:layout_weight="0.01" />
+
+
+    </LinearLayout>
+
+
+    <!--
+
+
+        <Space
+            android:layout_width="337dp"
+            android:layout_height="2dp"
+            android:layout_x="0dp"
+            android:layout_y="48dp"
+            android:background="#f3f3f3" />
+    -->
+
+    <LinearLayout
+
+        android:id="@+id/iv2_push_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/push_detail"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.47"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <Space
+                android:layout_width="1px"
+                android:layout_height="0dp"
+                android:layout_weight="0.19" />
+
+            <ImageView
+                android:id="@+id/push_detail_img"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="0.38"
+                android:src="@mipmap/push_schedule_detail" />
+
+
+            <Space
+                android:layout_width="1px"
+                android:layout_height="0dp"
+                android:layout_weight="0.1" />
+
+            <TextView
+                android:id="@+id/tvTitle_push_item"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="0.1"
+                android:allowUndo="false"
+                android:editable="false"
+                android:linksClickable="false"
+                android:text="앱잼 조 모임"
+                android:textSize="11dp" />
+
+            <Space
+                android:layout_width="1px"
+                android:layout_height="0dp"
+                android:layout_weight="0.23" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.53"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="1px"
+                android:layout_weight="0.06" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.11"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="11dp"
+                    android:src="@mipmap/push_map_detail" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/push_friend_detail"
+                    android:layout_marginBottom="11dp"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/push_time_detail" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.83"
+                android:paddingLeft="6dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvLoc_push_item"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="14dp"
+                    android:text="신당역 4번출구"
+                    android:textIsSelectable="false"
+                    android:textSize="11dp" />
+
+                <TextView
+                    android:id="@+id/tvPeople_push_item"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="14dp"
+                    android:text="김이름 박이름"
+                    android:textIsSelectable="false"
+                    android:textSize="10dp" />
+
+                <TextView
+                    android:id="@+id/tvTime_push_item"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2015/10/24 6PM"
+                    android:textIsSelectable="false"
+                    android:textSize="10dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+</LinearLayout><!--
+
+<ImageView
+    android:id="@+id/iv2_push_item"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_x="0dp"
+    android:layout_y="50dp"
+    android:src="@mipmap/push_item_detail" />
+-->
+
+
+    <!--
+
+        <Space
+            android:layout_width="337dp"
+            android:layout_height="3dp"
+            android:layout_y="189dp"
+            android:layout_x="0dp"
+            android:id="@+id/space"
+            android:background="#f3f3f3" />
+    -->
+

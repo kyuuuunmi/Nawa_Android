@@ -1,0 +1,56 @@
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#20353f</item>
+        <item name="colorPrimaryDark">#A5C8DA</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <!--스플래시&로그인 화면에서의 status bar & title-->
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <!--
+
+
+
+        <style name="AppTheme.NoActionBar">
+            <item name="android:actionBarStyle">@style/TranslucentActionBar</item>
+            <item name="windowActionBar">false</item>
+            <item name="windowNoTitle">true</item>
+            <item name="android:windowTranslucentStatus">true</item>
+            <item name="android:windowTranslucentNavigation">true</item>
+            <item name="android:windowFullscreen">true</item>
+            <item name="android:statusBarColor">@color/my_statusbar_color</item>
+        </style>-->
+    <style name="TwoWayView">
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+    </style>
+    <style name="MyAppTheme" parent="android:Theme.Holo.Light">
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Dark" />
+
+    <style name="Theme.HomeScreen" parent="android:Theme.Holo.NoActionBar.TranslucentDecor">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="TranslucentStatusBar" parent="@android:style/Theme.Holo.Light">
+        <item name="android:actionBarStyle">@style/TranslucentActionBar</item>
+        <item name="android:windowTranslucentNavigation">false</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="TranslucentActionBar" parent="@android:style/Widget.Holo.Light.ActionBar">
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+
+</resources>

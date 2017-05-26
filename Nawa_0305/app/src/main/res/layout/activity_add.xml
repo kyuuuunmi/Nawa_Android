@@ -1,0 +1,691 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/toolbar_main"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.09"
+        android:background="#91bbce"
+        app:contentInsetEnd="0dp"
+        app:contentInsetStart="0dp">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="1px"
+                android:layout_weight="0.05" />
+
+            <LinearLayout
+                android:id="@+id/add_toolbar_btnBack"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.06">
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:src="@mipmap/map_16" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.14"
+                android:background="@null"
+                android:src="@mipmap/map_toolbar_text" />
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="1px"
+                android:layout_weight="0.76" />
+        </LinearLayout>
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.13"
+        android:weightSum="1"
+        android:orientation="horizontal"
+        android:background="@mipmap/add_photo">
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="1px"
+            android:layout_weight="0.07"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.08"
+            android:orientation="vertical">
+
+            <Space
+                android:layout_width="1px"
+                android:layout_height="0dp"
+                android:layout_weight="0.52"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.33"
+                android:src="@mipmap/add_logo"/>
+
+            <Space
+                android:layout_width="1px"
+                android:layout_height="0dp"
+                android:layout_weight="0.15"/>
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="1px"
+            android:layout_weight="0.02"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.83"
+            android:orientation="vertical">
+
+            <Space
+                android:layout_width="1px"
+                android:layout_height="0dp"
+                android:layout_weight="0.54"/>
+
+            <EditText
+                android:id="@+id/add_txtName"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.19"
+                android:background="@null"
+                android:textSize="14dp"
+                android:cursorVisible="false"
+                android:hint="일정의 제목을 입력하세요"/>
+
+            <Space
+                android:layout_width="1px"
+                android:layout_height="0dp"
+                android:layout_weight="0.18"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.34"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <Space
+            android:layout_width="1px"
+            android:layout_height="0dp"
+            android:layout_weight="0.16"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.06"
+            android:weightSum="1"
+            android:orientation="horizontal">
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="1px"
+                android:layout_weight="0.09"/>
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.13"
+                android:src="@mipmap/add_search"/>
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="1px"
+                android:layout_weight="0.78"/>
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="1px"
+            android:layout_height="0dp"
+            android:layout_weight="0.02"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.01"
+            android:weightSum="1"
+            android:orientation="horizontal">
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="1px"
+                android:layout_weight="0.06"/>
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.88"
+                android:src="@mipmap/add_line"/>
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="1px"
+                android:layout_weight="0.06"/>
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="1px"
+            android:layout_height="0dp"
+            android:layout_weight="0.05"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.2"
+            android:weightSum="1"
+            android:orientation="horizontal">
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="1px"
+                android:layout_weight="0.1"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.58"
+                android:orientation="vertical"
+                android:weightSum="1">
+
+                <Space
+                    android:layout_width="1px"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.48"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.36"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <Space
+                        android:layout_width="0dp"
+                        android:layout_height="1px"
+                        android:layout_weight="0.05"/>
+                    <TextView
+                        android:id="@+id/add_txtFriend"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.67"
+                        android:background="@null"
+                        android:cursorVisible="false"
+                        android:hint="함께 할 친구를 선택하세요"
+                        android:maxLength="20"
+                        android:text=""
+                        android:textColorHint="#b8c6cd"
+                        android:textSize="12dp" />
+
+                    <Space
+                        android:layout_width="0dp"
+                        android:layout_height="1px"
+                        android:layout_weight="0.28"/>
+                </LinearLayout>
+
+
+                <Space
+                    android:layout_width="1px"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.1"/>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.06"
+                    android:src="@mipmap/add_line"/>
+
+
+            </LinearLayout>
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="1px"
+                android:layout_weight="0.11"/>
+
+            <ImageButton
+                android:id="@+id/add_btnFriend"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.12"
+                android:background="@null"
+                android:src="@mipmap/add_friend_unclick" />
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="1px"
+                android:layout_weight="0.13"/>
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="1px"
+            android:layout_height="0dp"
+            android:layout_weight="0.03"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.2"
+            android:weightSum="1"
+            android:orientation="horizontal">
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="1px"
+                android:layout_weight="0.1"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.58"
+                android:orientation="vertical"
+                android:weightSum="1">
+
+                <Space
+                    android:layout_width="1px"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.48"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.36"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <Space
+                        android:layout_width="0dp"
+                        android:layout_height="1px"
+                        android:layout_weight="0.05"/>
+                    <TextView
+                        android:id="@+id/add_btnLocation"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.67"
+                        android:background="@null"
+                        android:cursorVisible="false"
+                        android:hint="장소를 검색하세요"
+                        android:maxLength="20"
+                        android:text=""
+                        android:textColorHint="#b8c6cd"
+                        android:textSize="12dp" />
+
+                    <Space
+                        android:layout_width="0dp"
+                        android:layout_height="1px"
+                        android:layout_weight="0.28"/>
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="1px"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.1"/>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.06"
+                    android:src="@mipmap/add_line"/>
+
+            </LinearLayout>
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="1px"
+                android:layout_weight="0.11"/>
+
+            <ImageButton
+                android:id="@+id/location_imageButton"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.12"
+                android:src="@mipmap/add_map_unclick"
+                android:background="@null"/>
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="1px"
+                android:layout_weight="0.13"/>
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="1px"
+            android:layout_height="0dp"
+            android:layout_weight="0.27"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.44"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.06"
+            android:weightSum="1"
+            android:orientation="horizontal">
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="1px"
+                android:layout_weight="0.09"/>
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.13"
+                android:src="@mipmap/add_time"/>
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="1px"
+                android:layout_weight="0.78"/>
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="1px"
+            android:layout_height="0dp"
+            android:layout_weight="0.02"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.01"
+            android:weightSum="1"
+            android:orientation="horizontal">
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="1px"
+                android:layout_weight="0.06"/>
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.88"
+                android:src="@mipmap/add_line"/>
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="1px"
+                android:layout_weight="0.06"/>
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="1px"
+            android:layout_height="0dp"
+            android:layout_weight="0.07"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.08"
+            android:weightSum="1"
+            android:orientation="horizontal">
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="1px"
+                android:layout_weight="0.1"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.06"
+                android:weightSum="1"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.92"
+                    android:src="@mipmap/add_calendar_icon"/>
+
+                <Space
+                    android:layout_width="1px"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.08"/>
+
+
+            </LinearLayout>
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="1px"
+                android:layout_weight="0.07"/>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.71"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:id="@+id/add_txtSetdate"
+                    android:background="@null"
+                    android:textSize="15dp" />
+
+                <ImageView
+                    android:id="@+id/img_line"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:src="@mipmap/add_dayset_line"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/img_line"
+                    android:layout_alignRight="@id/img_line"
+                    android:src="@mipmap/add_dayset_click"/>
+
+
+
+            </RelativeLayout>
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="1px"
+                android:layout_weight="0.06"/>
+        </LinearLayout>
+
+        <Space
+            android:layout_width="1px"
+            android:layout_height="0dp"
+            android:layout_weight="0.1"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.11"
+            android:weightSum="1"
+            android:orientation="horizontal">
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="1px"
+                android:layout_weight="0.1"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.06"
+                android:weightSum="1"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.8"
+                    android:src="@mipmap/add_time_logo"/>
+
+                <Space
+                    android:layout_width="1px"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.2"/>
+
+            </LinearLayout>
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="1px"
+                android:layout_weight="0.2"/>
+
+            <ImageButton
+                android:id="@+id/add_btnMorning"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.08"
+                android:background="@null"
+                android:src="@mipmap/add_morning_unclick" />
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="1px"
+                android:layout_weight="0.015"/>
+
+            <ImageButton
+                android:id="@+id/add_btnAfternoon"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.08"
+                android:background="@null"
+                android:src="@mipmap/add_afternoon_unclick" />
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="1px"
+                android:layout_weight="0.015"/>
+
+            <ImageButton
+                android:id="@+id/add_btnDinner"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.08"
+                android:background="@null"
+                android:src="@mipmap/add_dinner_unclick" />
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="1px"
+                android:layout_weight="0.04"/>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.27"
+                >
+
+                <TextView
+                    android:id="@+id/add_txtSettime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="12dp"
+                    android:background="@null"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginLeft="8dp"/>
+
+                <ImageView
+                    android:id="@+id/img_line2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:src="@mipmap/add_dayset_line"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/img_line2"
+                    android:layout_alignRight="@id/img_line2"
+                    android:src="@mipmap/add_dayset_click"/>
+
+
+            </RelativeLayout>
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="1px"
+                android:layout_weight="0.07"/>
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="1px"
+            android:layout_height="0dp"
+            android:layout_weight="0.25"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.16"
+            android:weightSum="1"
+            android:orientation="horizontal">
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="1px"
+                android:layout_weight="0.1"/>
+
+            <ImageButton
+                android:id="@+id/ok_imagebutton"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.8"
+                android:background="@null"
+                android:src="@mipmap/add_ok_button" />
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="1px"
+                android:layout_weight="0.1"/>
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="1px"
+            android:layout_height="0dp"
+            android:layout_weight="0.14"/>
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@mipmap/add_background"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/add_toolbar_main"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@mipmap/add_toolbar"
+        app:contentInsetEnd="0dp"
+        app:contentInsetStart="0dp">
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="20dp"
+            android:paddingLeft="17dp"
+            android:paddingTop="21dp">
+
+            <ImageButton
+                android:id="@+id/add_toolbar_btnBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:src="@mipmap/add_back_button" />
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+
+    <EditText
+        android:id="@+id/add_txtName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="61dp"
+        android:layout_marginTop="69dp"
+        android:background="@null"
+        android:cursorVisible="false"
+        android:hint="일정의 제목을 입력하세요"
+
+        android:maxLength="20"
+        android:textSize="15dp" />
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="42dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="76dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/add_txtFriend"
+            android:layout_width="206dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="28dp"
+            android:layout_marginTop="20dp"
+            android:background="@null"
+            android:cursorVisible="false"
+            android:hint="함께 할 친구를 검색하세요"
+            android:maxLength="20"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text=""
+            android:textColorHint="#b8c6cd"
+            android:textSize="13dp" />
+
+        <ImageButton
+            android:id="@+id/add_btnFriend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="28dp"
+            android:layout_marginRight="28dp"
+            android:background="@null"
+            android:src="@mipmap/add_friend_unclick" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/add_btnLocation"
+            android:layout_width="206dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="28dp"
+            android:layout_marginTop="20dp"
+            android:background="@null"
+            android:cursorVisible="false"
+            android:hint="장소를 검색하세요"
+            android:maxLength="20"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:singleLine="true"
+            android:textColorHint="#b8c6cd"
+            android:textSize="13dp" />
+
+        <ImageButton
+            android:id="@+id/location_imageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="28dp"
+            android:layout_marginRight="28dp"
+            android:background="@null"
+            android:src="@mipmap/add_map_unclick" />
+    </LinearLayout>
+
+
+    <AbsoluteLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="87dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/add_txtSetdate"
+            android:layout_width="245dp"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:paddingLeft="4dp"
+            android:paddingTop="4dp"
+            android:textSize="15dp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_x="246dp"
+            android:layout_y="16dp"
+            android:background="@mipmap/add_dayset_click" />
+    </AbsoluteLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="80dp"
+        android:background="@mipmap/add_dayset_line" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="27dp"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/add_btnMorning"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:layout_marginLeft="135dp"
+
+            android:background="@null"
+            android:src="@mipmap/add_morning_unclick" />
+
+        <ImageButton
+            android:id="@+id/add_btnAfternoon"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:layout_marginLeft="8dp"
+
+            android:background="@null"
+            android:src="@mipmap/add_afternoon_unclick" />
+
+        <ImageButton
+            android:id="@+id/add_btnDinner"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:layout_marginLeft="8dp"
+
+            android:background="@null"
+            android:src="@mipmap/add_dinner_unclick" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="13dp"
+            android:orientation="vertical">
+            <AbsoluteLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="1dp">
+
+                <TextView
+                    android:id="@+id/add_txtSettime"
+                    android:layout_width="82dp"
+                    android:layout_height="26dp"
+                    android:background="@null"
+                    android:paddingLeft="9dp"
+                    android:paddingTop="3dp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_x="82dp"
+                    android:layout_y="17dp"
+                    android:background="@null"
+                    android:src="@mipmap/add_dayset_click" />
+            </AbsoluteLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/add_timeset_line" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/ok_imagebutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="58dp"
+        android:background="@null"
+        android:src="@mipmap/add_ok_button" />
+
+</LinearLayout>

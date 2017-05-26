@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:gravity="center">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/iv_msg"
+        android:background="@mipmap/dialog_message"
+        android:layout_marginLeft="-0.5dp"
+        android:layout_marginTop="-0.1dp"
+        android:layout_marginRight="-1dp"
+        android:layout_x="35dp"
+        android:layout_y="255dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="배수정"
+        android:id="@+id/tvFrom_msg"
+        android:layout_x="130dp"
+        android:layout_y="306dp"
+        android:textSize="8dp" />
+
+    <TextView
+        android:layout_width="43dp"
+        android:layout_height="8dp"
+        android:text="2016. 01. 05"
+        android:id="@+id/tvDate_msg"
+        android:layout_x="260dp"
+        android:layout_y="302dp"
+        android:textSize="8dp"
+        android:allowUndo="false"
+        android:gravity="end" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="8dp"
+        android:layout_x="271dp"
+        android:layout_y="302dp"
+        android:id="@+id/imageView"
+        android:background="#dfdfdf"
+        android:layout_marginLeft="-0.5dp"
+        android:layout_marginTop="-0.1dp"
+        android:layout_marginRight="-1dp" />
+
+    <TextView
+        android:layout_width="32dp"
+        android:layout_height="wrap_content"
+        android:text="5:41PM"
+        android:id="@+id/tvTime_msg"
+        android:layout_x="271dp"
+        android:layout_y="312dp"
+        android:textSize="8dp"
+        android:singleLine="false"
+        android:gravity="end"
+        android:visibility="visible" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="35dp"
+        android:layout_y="358dp"
+        android:id="@+id/btnYes"
+        android:layout_marginTop="-1dp"
+        android:src="@mipmap/dialog_btn_yes_unclick" />
+
+    <ImageView
+        android:layout_width="3dp"
+        android:layout_height="26.18dp"
+        android:layout_x="178dp"
+        android:layout_y="358dp"
+        android:id="@+id/imageView3"
+        android:background="#ffffff"
+        android:layout_marginLeft="-0.5dp"
+        android:layout_marginTop="-0.1dp"
+        android:layout_marginRight="-1dp"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_y="358dp"
+        android:layout_x="179.5dp"
+        android:id="@+id/btnNo"
+        android:layout_marginTop="-0.4dp"
+        android:src="@mipmap/dialog_btn_no_unclick" />
+
+    <TextView
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:text="메세지 내용 알랄라ㄹㄹㄹㄹㄹㄹㄹ"
+        android:id="@+id/tvMsg_msg"
+        android:layout_x="130dp"
+        android:layout_y="330dp"
+        android:textSize="8dp" />
+
+</AbsoluteLayout>

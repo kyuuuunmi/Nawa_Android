@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@mipmap/join_background_17"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/join_txtName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:background="@mipmap/join_box"
+        android:hint="이름"
+        android:paddingLeft="13dp"
+        android:singleLine="true"
+        android:textColor="#88A8BF"
+        android:textColorHint="#88A8BF"
+        android:textSize="12dp" />
+
+    <TextView
+        android:id="@+id/join_txtPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:background="@mipmap/join_phonenumber"
+        android:gravity="center_vertical"
+        android:paddingLeft="13dp"
+        android:singleLine="true"
+        android:text="핸드폰"
+        android:textColor="#88A8BF"
+        android:textColorHint="@null"
+        android:textSize="12dp" />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="43dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/join_txtId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/join_id"
+            android:hint="아이디"
+            android:paddingLeft="13dp"
+            android:textColor="#88A8BF"
+            android:textColorHint="#88A8BF"
+            android:textSize="12dp" />
+
+        <ImageButton
+            android:id="@+id/join_btnCheck"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@null"
+            android:layout_marginLeft="8dp"
+            android:src="@mipmap/join_button" />
+    </LinearLayout>
+
+
+    <EditText
+        android:id="@+id/join_txtPw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:background="@mipmap/join_box"
+        android:hint="비밀번호"
+        android:inputType="textPassword"
+        android:paddingLeft="13dp"
+        android:textColor="#88A8BF"
+        android:textColorHint="#88A8BF"
+        android:textSize="12dp" />
+
+
+    <LinearLayout
+        android:layout_width="244dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="68dp"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/join_check_use1"
+            android:layout_width="204dp"
+            android:layout_height="wrap_content"
+            android:button="@mipmap/join_checkbox_unclick"
+            android:paddingLeft="8dp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="-184dp"
+            android:src="@mipmap/join_use1" />
+        <ImageButton
+            android:id="@+id/join_btn_detail1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="86dp"
+            android:layout_gravity="right"
+            android:src="@mipmap/join_explain_21"
+            android:background="@null"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="244dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/join_check_use2"
+            android:layout_width="204dp"
+            android:layout_height="wrap_content"
+            android:button="@mipmap/join_checkbox_unclick" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="-184dp"
+            android:src="@mipmap/join_use2" />
+        <ImageButton
+            android:id="@+id/join_btn_detail2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="106dp"
+            android:layout_gravity="right"
+            android:src="@mipmap/join_explain_21"
+            android:background="@null"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/join_btnJoin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="46dp"
+        android:background="@mipmap/join_ok_button_16" />
+
+</LinearLayout>

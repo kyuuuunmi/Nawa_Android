@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#B6D2DE"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/toolbar_main"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.09"
+        android:background="#91bbce">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="1px"
+                android:layout_weight="0.05" />
+
+            <LinearLayout
+                android:id="@+id/friends_toolbar_btnBack"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.06">
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:src="@mipmap/map_16" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.14"
+                android:background="@null"
+                android:src="@mipmap/toolbar_friends_55" />
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="1px"
+                android:layout_weight="0.61" />
+
+            <ImageButton
+                android:id="@+id/friends_toolbar_btnSubmit"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.08"
+                android:background="@null"
+                android:src="@mipmap/contact_png_11" />
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="1px"
+                android:layout_weight="0.07" />
+        </LinearLayout>
+    </android.support.v7.widget.Toolbar>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.11"
+        android:orientation="vertical">
+
+        <Space
+            android:layout_width="1px"
+            android:layout_height="0dp"
+            android:layout_weight="0.053" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0.11"
+            android:orientation="horizontal"
+            android:weightSum="1"
+            >
+
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="1px"
+                android:layout_weight="0.053" />
+
+            <org.lucasr.twowayview.TwoWayView xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/friends_checked_listView"
+                style="@style/TwoWayView"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="0.87"
+                android:drawSelectorOnTop="false"
+                android:fastScrollEnabled="false" />
+
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="1px"
+                android:layout_weight="0.053" />
+        </LinearLayout>
+
+
+
+        <Space
+            android:layout_width="1px"
+            android:layout_height="0dp"
+            android:layout_weight="0.053" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_weight="0.09"
+        android:background="#ffffff"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="10px"
+                android:layout_weight="0.04" />
+
+            <AutoCompleteTextView
+                android:id="@+id/autoCompleteTextView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.81"
+                android:background="@mipmap/map_search_bar"
+                android:completionThreshold="1"
+                android:hint="Search"
+                android:paddingLeft="15dp" />
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="10px"
+                android:layout_weight="0.02" />
+
+            <ImageButton
+                android:id="@+id/buttonSearch"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.09"
+                android:background="@mipmap/map_button" />
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="10px"
+                android:layout_weight="0.04" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/friends_listView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.71"
+        android:choiceMode="multipleChoice"
+        android:clickable="true"
+        android:divider="@mipmap/contact_png_08"
+        android:fastScrollEnabled="false" />
+
+</LinearLayout>

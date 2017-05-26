@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:gravity="center">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/iv_push"
+        android:background="@mipmap/dialog_push"
+        android:layout_y="255dp"
+        android:layout_x="35dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="앱잼 조 모임"
+        android:id="@+id/tvTitle_push"
+        android:layout_x="118dp"
+        android:layout_y="308dp"
+        android:textSize="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="신당역"
+        android:id="@+id/tvLoc_push"
+        android:layout_y="292dp"
+        android:textSize="7dp"
+        android:layout_x="220dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="김바보"
+        android:id="@+id/tvPeople_push"
+        android:layout_y="309dp"
+        android:textSize="7dp"
+        android:layout_x="220dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1월8일 17시"
+        android:id="@+id/tvTime_push"
+        android:layout_y="326dp"
+        android:textSize="7dp"
+        android:layout_x="220dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="35dp"
+        android:layout_y="358dp"
+        android:id="@+id/btnYes"
+        android:layout_marginTop="-1dp"
+        android:src="@mipmap/dialog_btn_yes_unclick" />
+
+    <ImageView
+        android:layout_width="3dp"
+        android:layout_height="26.18dp"
+        android:layout_x="178dp"
+        android:layout_y="358dp"
+        android:id="@+id/imageView3"
+        android:background="#ffffff"
+        android:layout_marginLeft="-0.5dp"
+        android:layout_marginTop="-0.1dp"
+        android:layout_marginRight="-1dp"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_y="358dp"
+        android:layout_x="179.5dp"
+        android:id="@+id/btnNo"
+        android:layout_marginTop="-0.4dp"
+        android:src="@mipmap/dialog_btn_no_unclick" />
+
+
+
+</AbsoluteLayout>

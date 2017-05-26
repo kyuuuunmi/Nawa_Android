@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/login_background"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:weightSum="1"
+    tools:context="org.sopt.weekly_0110.Activity.LoginActivity">
+
+
+    <Space
+        android:layout_width="1px"
+        android:layout_height="0dp"
+        android:layout_weight="0.251" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="0.134"
+        android:src="@mipmap/login_logo" />
+
+    <Space
+        android:layout_width="1px"
+        android:layout_height="0dp"
+        android:layout_weight="0.027" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="0.044"
+        android:src="@mipmap/login_text" />
+
+    <Space
+        android:layout_width="1px"
+        android:layout_height="0dp"
+        android:layout_weight="0.12" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.072"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="0.076" />
+
+        <EditText
+            android:id="@+id/Login_textId"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.86"
+            android:background="@mipmap/login_idbox"
+            android:hint="userid"
+            android:paddingLeft="56dp"
+            android:singleLine="true"
+            android:textColor="#88A8BF"
+            android:textColorHint="#88A8BF"
+            android:textSize="19dp" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="0.064" />
+
+    </LinearLayout>
+
+    <Space
+        android:layout_width="1px"
+        android:layout_height="0dp"
+        android:layout_weight="0.014" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.072"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="0.076" />
+
+        <EditText
+            android:id="@+id/Login_textPw"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.86"
+            android:background="@mipmap/login_password"
+            android:hint="password"
+            android:inputType="textPassword"
+            android:paddingLeft="56dp"
+            android:singleLine="@null"
+            android:textColor="#88A8BF"
+            android:textColorHint="#88A8BF"
+            android:textSize="19dp" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="0.064" />
+
+    </LinearLayout>
+
+
+    <Space
+        android:layout_width="1px"
+        android:layout_height="0dp"
+        android:layout_weight="0.084" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.053"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="0.078" />
+
+        <ImageButton
+            android:id="@+id/Login_btnJoin"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.411"
+            android:background="@mipmap/login_joinselect" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="0.022" />
+
+        <ImageButton
+            android:id="@+id/Login_btnLogin"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.411"
+            android:background="@mipmap/login_select" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="0.078" />
+
+    </LinearLayout>
+
+    <Space
+        android:layout_width="1px"
+        android:layout_height="0dp"
+        android:layout_weight="0.055" />
+
+    <ImageButton
+        android:id="@+id/btn_findPW"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.019"
+        android:background="@null"
+        android:src="@mipmap/login_find_pw" />
+
+    <Space
+        android:layout_width="1px"
+        android:layout_height="0dp"
+        android:layout_weight="0.055" />
+</LinearLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory android:title="로그인 설정">
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="prefAutoLogin"
+            android:title="자동 로그인"/>
+
+
+        <Preference
+            android:defaultValue="true"
+            android:key="prefLogout"
+            android:title="로그아웃"
+            android:selectable="true"
+            android:summary="어플리케이션이 종료됩니다.">
+
+        </Preference>
+
+    </PreferenceCategory>
+</PreferenceScreen>

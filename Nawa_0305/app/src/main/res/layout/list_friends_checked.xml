@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    >
+    <TextView
+        android:id="@+id/selectedName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@mipmap/contact_select_back"
+        android:clickable="true"
+        android:layout_marginRight="3dp"
+        android:gravity="center"
+        android:text="이혜원"
+        android:textColor="#FFFFFF"
+        android:textSize="18dp" />
+
+    <ImageView
+        android:layout_alignBaseline="@id/selectedName"
+        android:layout_toRightOf="@id/selectedName"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="11dp"
+        android:src="@mipmap/friendlist_comma_55"/>
+
+</RelativeLayout>
